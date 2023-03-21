@@ -93,6 +93,9 @@ header {
         backdrop-filter: blur( 5px );
         border-radius: 10px;
     }
+    .logo {
+        height: 5vh;
+    }
     .header-items {
         width: 100%;
         display: flex;
@@ -100,7 +103,7 @@ header {
         justify-content: space-around;
         padding: 0;
     } .header-item {
-        padding: 10px 10px 10px;
+        padding: 10px;
         margin: 0;
     }
     .desktop {

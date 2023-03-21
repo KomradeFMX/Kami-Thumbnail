@@ -5,6 +5,8 @@ section {
     justify-content: center;
 }
 
+/* Input and button thingys */
+
 .input {
     padding: 20px;
     background-color: var(--message-frame);
@@ -26,12 +28,34 @@ input {
     background-color: rgba(240, 248, 255, 0);
 }
 
+input:focus {
+    outline-width: 0;
+}
+
 button {
+    position: relative;
     background-color: var(--accent);
     border: 0;
     border-radius: 10px;
+    transition: .1s;
+} button:active {
+    position: relative;
+    transition: 0.1s;
+    top: 5px;
 }
 
+
+/* Images */
+details {
+    margin: 10px 0 10px 0;
+}
+summary {
+    font-size: large;
+    padding: 10px;
+    background-color: #8962c94d;
+    border-radius: 10px;
+    border: 2px dashed white;
+}
 details[open] summary ~ * {
     animation: sweep .5s ease-in-out;
 }
@@ -42,5 +66,25 @@ details[open] summary ~ * {
   }
 
 .resultImage {
+    margin-top: 5px;
     width: 80%;
+    border-radius: 10px;
   }
+
+
+/* Error messages */
+.error {
+    height: 7vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(151, 12, 12, 0.438);
+    border-radius: 10px;
+    border: 1px solid red;
+}
+
+.error-message {
+    padding: 4px;
+}
