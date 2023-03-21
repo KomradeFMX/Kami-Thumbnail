@@ -1,5 +1,6 @@
 header {
-    min-height: 13vh;
+    height: 9vh;
+    min-height: 9vh;
     width: 100%;
 
     position: sticky;
@@ -7,10 +8,12 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     z-index: 9999;
 }
 
 .header-container {
+    height: 100%;
     width: 98%;
 
     display: flex;
@@ -34,16 +37,14 @@ header {
 }
 
 .header-logo {
-    max-height: 9vh;
-
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 .logo {
-    max-height: 9vh;
-    margin-left: 4px;
+    max-height: 7vh;
+    padding: 4px;
 
     border-radius: 10px;
 }
@@ -74,6 +75,9 @@ header {
 }
 
 @media screen and (max-width: 950px) {
+    header {
+        min-height: 13vh;
+    }
     .header-mobile {
         margin-top: 5px;
         display: flex;
