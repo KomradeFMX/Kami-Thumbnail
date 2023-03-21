@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- META -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/section.css">
+        <link rel="stylesheet" href="./css/mobile.css">
+        <!-- JS -->
+        <script src="./js/logic.js"></script>
+        <!-- Title -->
+        <title>Kami Thumbnail</title>
+    </head>
+    <body>
+
+        <header>
+            <div class='header-container'>
+              <div class='header-logo'>
+                <img src='./src/img/kami_thmb_logo.png' class='logo' alt='Logo of the page'>
+                <span class="title">Kami</span>
+              </div>
+      
+              <ul class="header-items desktop">
+                <li class="header-item link desktop">About</li>
+                <li class="header-item link desktop">How To</li>
+                <li class="header-item active link desktop">Kami ENV</li>
+              </ul>
+            </div>
+
+            <div class="header-mobile mobile">
+                <div class="header-items">
+                    <div class="header-item link mobile">About</div>
+                    <div class="header-item link mobile">How To</div>
+                    <div class="header-item active link mobile">Kami ENV</div>
+                  </div>
+            </div>
+          </header>
+
+        <div class="separator-4vh"></div>
+
+        <section>
+            <div class="main-container">
+                <span class="title">Kami Thumbnail</span>
+                <div class="input">
+                    <input id="input" placeholder="Youtube Link!" type="link">
+                    <button onclick="fetchThumbnail()">Fetch!</button>
+                </div>
+    
+                <div class="images">
+                    <div id="thumbnails"></div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>

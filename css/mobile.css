@@ -1,0 +1,14 @@
+@media screen and (max-width: 800px) {
+    .header-item .link {
+        display: none;
+    }
+    .main-container {
+        width: 100%;
+    }
+    input {
+        width: 90%;
+    }
+    .resultImage {
+        width: 100%;
+    }
+  }

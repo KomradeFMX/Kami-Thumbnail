@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'nausea';
+    src: url('../fonts/nausea.otf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../src/fonts/Orbitron-Bold.ttf');
+}
+
+:root {
+    --accent: #8962c9;
+    --background: #40494b;
+    --font-color: #ecfffe;
+    --message-bg: rgba(34, 34, 34, 0.795);
+    --message-frame: rgb(27, 27, 27);
+    --glow-color: rgba(255, 255, 255, 0.5);
+}
+
+* {
+    color: var(--font-color);
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+
+    font-size: 2vh;
+
+    transition: 0.2s;
+}
+
+body {
+    font-family: 'Saira', sans-serif;
+    background-color: var(--background);
+}
+
+.main-container {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.separator-2vh {
+    height: 2vh;
+}
+.separator-4vh {
+    height: 4vh;
+}
+
+
+
+.title {
+    font-family: 'Orbitron';
+
+    font-size: 6vh;
+    letter-spacing: 4px;
+    line-height: 1;
+} .subtitle {
+    font-size: 5vh;
+}
+
+.announcement {
+    max-width: 40%;
+}
+
+
+.active {
+    background-color: var(--accent);
+    padding: 4px 10px 4px;
+    border-radius: 5px;
+}
+
+.link:active {
+    transition: 0.1s;
+    top: 10px
+}
+
+.command {
+    background-color: #545858;
+    padding: 1px;
+    border-radius: 5px;
+
+    white-space: nowrap;
+} 
+
+.bot-tag {
+    background-color: var(--accent);
+    border-radius: 5px;
+    padding: 4px 10px 4px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+
+/* REACTIVE TIME */
+
+@media screen and (max-width: 950px) {
+    .title {
+        font-size: 8vw;
+    }
+}
